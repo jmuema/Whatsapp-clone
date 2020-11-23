@@ -4,6 +4,8 @@ import ChatIcon from "@material-ui/icons/Chat";
 import  MoreVertIcon  from "@material-ui/icons/MoreVert";
 import React from 'react';
 import "./Sidebar.css";
+import SearchOutlined from '@material-ui/icons/SearchOutlined';
+import SidebarChat from "./SidebarChat";
 
 function Sidebar(props) {
     
@@ -27,12 +29,23 @@ function Sidebar(props) {
             
             </div>
             <div className="sidebar__search"> 
+            <div className="sidebar__searchContainer">
+            <SearchOutlined/>
+            <input placeholder="Search ot start new chat" type="text"/>
+
+            </div>
+          
             
             
             </div>
             <div className="sidebar__chats"> 
-            
-            
+            <SidebarChat/>
+            <SidebarChat/>
+            <SidebarChat/>
+            <SidebarChat/>
+
+    
+
             </div>
             {/* <h1> sidebar </h1> */}
         </div>
